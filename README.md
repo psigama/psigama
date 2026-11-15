@@ -48,3 +48,7 @@ O site e o Crivo ficam em lugares separados: se a VM do Crivo cair, o site conti
 ## Publicações
 
 As publicações da página seguem o [Google Acadêmico](https://scholar.google.com/citations?user=a95TXg4AAAAJ&hl=pt-BR); ao atualizar a lista, confira também o [Currículo Lattes](http://lattes.cnpq.br/9619964316046037).
+
+## Licença
+
+O conteúdo do site, textos e páginas, está sob a licença [Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)](LICENSE), a mesma indicada no rodapé: pode ser compartilhado e adaptado, inclusive para fins comerciais, desde que se dê o crédito a Rogerio Cisi. O Crivo tem licença própria, a MIT, no repositório [`crivo`](https://github.com/rogeriocisi/crivo).
