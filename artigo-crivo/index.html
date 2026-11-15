@@ -151,8 +151,85 @@
             efeito.</li>
         </ul>
         <h3>2.5 Lacuna</h3>
-        <p class="todo"><strong>A fazer:</strong> levantamento sistemático de ferramentas de software para estudos de
-          mediunidade e de psi. Sem essa busca, o artigo não afirma que não existe plataforma equivalente.</p>
+        <p>Para delimitar a lacuna, fizemos um levantamento exploratório de software usado em estudos de mediunidade
+          e de psi. A busca foi feita em novembro de 2026, na web aberta e em repositórios de código, com termos em
+          inglês e em português que combinavam o domínio (mediunidade, AIR, parapsicologia, psi, ganzfeld, percepção
+          extrassensorial) com a função procurada (software, plataforma, código aberto, cegamento, sorteio,
+          pré-registro, trilha de auditoria, pontuação automática). O que apareceu se agrupa em cinco famílias.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Família</th>
+                <th>Exemplos</th>
+                <th>O que cobre</th>
+                <th>O que não cobre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Protocolos de mediunidade</td>
+                <td>Beischel e colaboradores, 2015; Tressoldi e colaboradores, 2022, 2025</td>
+                <td>Cegamento múltiplo, chamariz e avaliação cega, descritos como procedimento</td>
+                <td>Não localizamos software público que execute ou comprove o cegamento; a pontuação é feita por
+                  pessoas</td>
+              </tr>
+              <tr>
+                <td>Credibilidade verificável em psi</td>
+                <td>Transparent Psi Project (Kekecs e colaboradores, 2023)</td>
+                <td>Depósito direto dos dados em repositório de terceiros, dados abertos desde a origem, relatório em
+                  tempo real, software com evidência de adulteração, auditores externos</td>
+                <td>O domínio é outro, um experimento de precognição em laboratório: não há papéis a cegar entre
+                  si nem informação sobre pessoa falecida</td>
+              </tr>
+              <tr>
+                <td>Registro e dados abertos da área</td>
+                <td>Registro de estudos da Koestler Parapsychology Unit (Wiseman e Watt, 2026); repositório Psi Open
+                  Data</td>
+                <td>Pré-registro e publicação dos dados</td>
+                <td>Não executam o estudo: o vínculo entre o que foi registrado e o que foi coletado depende do
+                  pesquisador</td>
+              </tr>
+              <tr>
+                <td>Testes de psi automatizados</td>
+                <td>Autoganzfeld (Bem e Honorton, 1994); testes on-line GotPsi (Radin, 2019); validação do software
+                  de estudo (Pooley, 2024)</td>
+                <td>Sorteio e registro por computador; coleta em larga escala pela internet</td>
+                <td>Nada sobre mediunidade; os testes on-line sem supervisão ficam sujeitos a parada opcional, como
+                  apontam revisões da própria área</td>
+              </tr>
+              <tr>
+                <td>Plataformas genéricas</td>
+                <td>jsPsych (de Leeuw, 2015), psiTurk (Gureckis e colaboradores, 2016), REDCap (Harris e
+                  colaboradores, 2009)</td>
+                <td>Construção de experimentos on-line; captura de dados com trilha de auditoria e
+                  randomização</td>
+                <td>Não trazem matriz de visibilidade por papel, compromisso e revelação nem desmascaramento
+                  automático; teriam de ser construídos por cima</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>O vizinho mais próximo é o Transparent Psi Project. Ele parte da mesma tese deste artigo, a de que a
+            credibilidade deve ser verificável por terceiros e não pressuposta, e a aplica a uma replicação
+            multicêntrica de um experimento de precognição. O Crivo deve ser apresentado como extensão dessa linha a
+            um domínio em que há vários papéis humanos a manter cegos entre si, e não como ideia sem precedente.</li>
+          <li>O carimbo de tempo de protocolos por hash tem antecedente na pesquisa clínica, com âncora em
+            blockchain. O artigo mais citado dessa proposta foi retratado por problema de método, o que recomenda
+            cautela ao citá-la e reforça a opção por um padrão estabelecido, o RFC 3161.</li>
+          <li>Um projeto de código aberto para experimentos de psi on-line existe no SourceForge, sem atualização
+            desde 2013. Não encontramos nele pré-registro, cegamento por papel nem trilha de auditoria.</li>
+        </ul>
+        <p><strong>Lacuna, na forma em que o artigo pode afirmá-la:</strong> nas fontes consultadas, não
+          localizamos uma plataforma aberta que execute um protocolo de mediunidade de ponta a ponta e que trate o
+          cegamento entre papéis, o sorteio, o pré-registro e a pontuação como propriedades conferíveis por terceiros
+          a partir de artefatos publicados. As peças existem separadas, em outros domínios ou como procedimento
+          manual.</p>
+        <p class="todo"><strong>A fazer:</strong> este levantamento é exploratório, não uma revisão sistemática. As
+          descrições acima vêm de resumos e precisam ser conferidas no texto integral. Antes da submissão, repetir a
+          busca em bases indexadas com protocolo registrado (termos, datas, critérios de inclusão) e perguntar
+          diretamente aos grupos ativos na área se usam software próprio não publicado.</p>
 
         <h2>3. Requisitos: um modelo de ameaças</h2>
         <p>Cada explicação convencional para um acerto é tratada como uma ameaça a mitigar, no vocabulário da
@@ -486,7 +563,8 @@
         <h2>Pendências antes da submissão</h2>
         <ul>
           <li>Ler o texto integral das referências e conferir cada número citado.</li>
-          <li>Levantamento sistemático de ferramentas existentes (seção 2.5).</li>
+          <li>Repetir o levantamento de ferramentas (seção 2.5) em bases indexadas, com protocolo registrado, e
+            conferir no texto integral as descrições usadas.</li>
           <li>Efeito esperado e cálculo de poder (seção 4.5).</li>
           <li>Revisão do questionário, hoje em versão de rascunho.</li>
           <li>Pacote de verificação público e a decisão de proteção de dados de que ele depende.</li>
@@ -505,10 +583,26 @@
           <li>Beischel J, Boccuzzi M, Biuso M, Rock AJ. Anomalous information reception by research mediums under
             blinded conditions II: replication and extension. Explore. 2015;11(2):136–142. <a
               href="https://doi.org/10.1016/j.explore.2015.01.001">DOI</a></li>
+          <li>Bem DJ, Honorton C. Does psi exist? Replicable evidence for an anomalous process of information
+            transfer. Psychological Bulletin. 1994;115(1):4–18. <a
+              href="https://doi.org/10.1037/0033-2909.115.1.4">DOI</a></li>
+          <li>de Leeuw JR. jsPsych: a JavaScript library for creating behavioral experiments in a Web browser.
+            Behavior Research Methods. 2015;47(1):1–12. <a
+              href="https://doi.org/10.3758/s13428-014-0458-y">DOI</a></li>
+          <li>Gureckis TM, Martin J, McDonnell J, e colaboradores. psiTurk: an open-source framework for conducting
+            replicable behavioral experiments online. Behavior Research Methods. 2016;48(3):829–842. <a
+              href="https://doi.org/10.3758/s13428-015-0642-8">DOI</a></li>
+          <li>Harris PA, Taylor R, Thielke R, Payne J, Gonzalez N, Conde JG. Research electronic data capture
+            (REDCap): a metadata-driven methodology and workflow process for providing translational research
+            informatics support. Journal of Biomedical Informatics. 2009;42(2):377–381. <a
+              href="https://doi.org/10.1016/j.jbi.2008.08.010">DOI</a></li>
           <li>Hyman R. Cold reading: how to convince strangers that you know all about them. The Zetetic.
             1977;1:18–37.</li>
           <li>Hyman R. How not to test mediums: critiquing the afterlife experiments. Skeptical Inquirer. Janeiro e
             fevereiro de 2003.</li>
+          <li>Kekecs Z, Palfi B, Szaszi B, e colaboradores. Raising the value of research studies in psychological
+            science by increasing the credibility of research reports: the transparent Psi project. Royal Society
+            Open Science. 2023;10(2):191375. <a href="https://doi.org/10.1098/rsos.191375">DOI</a></li>
           <li>Kelly EW, Arcangel D. An investigation of mediums who claim to give information about deceased persons.
             The Journal of Nervous and Mental Disease. 2011;199(1):11–17. <a
               href="https://doi.org/10.1097/NMD.0b013e31820439da">DOI</a></li>
@@ -520,6 +614,11 @@
               href="https://doi.org/10.1073/pnas.1708274114">DOI</a></li>
           <li>O'Keeffe C, Wiseman R. Testing alleged mediumship: methods and results. British Journal of Psychology.
             2005;96(2):165–179. <a href="https://doi.org/10.1348/000712605X36361">DOI</a></li>
+          <li>Pooley AL. Optimising methodological practices within psychology: a parapsychology case-study. Tese de
+            doutorado. University of Edinburgh; 2024.</li>
+          <li>Radin D. Tricking the trickster: evidence for predicted sequential structure in a 19-year online psi
+            experiment. Journal of Scientific Exploration. 2019;33(4):549–568. <a
+              href="https://doi.org/10.31275/2019/1429">DOI</a></li>
           <li>Rocha AC, Paraná D, Freire ES, Lotufo Neto F, Moreira-Almeida A. Investigating the fit and accuracy of
             alleged mediumistic writing: a case study of Chico Xavier's letters. Explore. 2014;10(5):300–308. <a
               href="https://doi.org/10.1016/j.explore.2014.06.002">DOI</a></li>
@@ -532,8 +631,16 @@
           <li>Simmons JP, Nelson LD, Simonsohn U. False-positive psychology: undisclosed flexibility in data
             collection and analysis allows presenting anything as significant. Psychological Science.
             2011;22(11):1359–1366. <a href="https://doi.org/10.1177/0956797611417632">DOI</a></li>
+          <li>Tressoldi P, Liberale L, Sinesio F, Bubba V, Pederzoli L, Testoni I. Mediumship accuracy: a
+            quantitative and qualitative study with a triple-blind protocol. Explore. 2022;18(4):411–415. <a
+              href="https://doi.org/10.1016/j.explore.2021.05.009">DOI</a></li>
+          <li>Tressoldi P, Liberale L, Sinesio F. Is there someone in the hereafter? Mediumship accuracy of 100
+            readings obtained with a triple level of blinding protocol. Omega: Journal of Death and Dying.
+            2025;91(2):955–963 (on-line em 2022). <a href="https://doi.org/10.1177/00302228221146376">DOI</a></li>
           <li>Wiseman R, O'Keeffe C. A critique of Schwartz et al.'s after-death communication studies. Skeptical
             Inquirer. Novembro e dezembro de 2001.</li>
+          <li>Wiseman R, Watt C. Study preregistration: an early example and analysis. PeerJ. 2026;14:e21360. <a
+              href="https://doi.org/10.7717/peerj.21360">DOI</a></li>
         </ul>
       </div>
     </section>
