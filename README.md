@@ -11,11 +11,12 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 | `psigama.com/axion` | Página explicativa do Áxion (`axion/index.html`), o próximo projeto |
 | `psigama.com/quantum-study` | Página explicativa do Quantum Computing Study (`quantum-study/index.html`) |
 | `psigama.com/pes` | Testes de percepção extrassensorial (`pes/index.html`). Os testes em si rodam no Crivo, em `crivo.psigama.com/testes/...` |
+| `psigama.com/artigo-crivo` | Esboço do artigo técnico do Crivo (`artigo-crivo/index.html`), ligado a partir de Publicações |
 | `crivo.psigama.com` | Crivo, aplicação Spring Boot do repositório [`crivo`](https://github.com/rogeriocisi/crivo), servida na raiz do subdomínio |
 
 ## Arquivos
 
-- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/` e `pes/` são HTML estático, sem build.
+- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/`, `pes/` e `artigo-crivo/` são HTML estático, sem build.
 - `css/psigama.css` guarda os estilos compartilhados por todas as páginas.
 - Os links entre as páginas são relativos, então o site funciona tanto em `rogeriocisi.github.io/psigama/` quanto no domínio próprio.
 
