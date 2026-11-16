@@ -18,7 +18,7 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 
 ## Arquivos
 
-- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/`, e `crivo/` (com `crivo/air/` e `crivo/pes/`) são HTML estático, sem build.
+- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/` e `crivo/` (com `crivo/air/` e `crivo/pes/`) são HTML estático, sem build.
 - `css/psigama.css` guarda os estilos compartilhados por todas as páginas.
 - Os links entre as páginas são relativos, então o site funciona tanto em `rogeriocisi.github.io/psigama/` quanto no domínio próprio.
 
