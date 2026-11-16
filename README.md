@@ -11,10 +11,11 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 | `psigama.com/axion` | Página explicativa do Áxion (`axion/index.html`), o próximo projeto |
 | `psigama.com/quantum-study` | Página explicativa do Quantum Computing Study (`quantum-study/index.html`) |
 | `psigama.com/crivo/air` | Experimentos de recepção anômala de informação do Crivo, P1-automático e P2-supervisionado (`crivo/air/index.html`) |
-| `psigama.com/crivo/pes` | Testes de percepção extrassensorial do Crivo, P3-precognição e P4-visão-remota (`crivo/pes/index.html`). Os testes em si rodam no Crivo, em `crivo.psigama.com/protocolo/P3` e `/protocolo/P4` |
+| `psigama.com/crivo/pes` | Testes de percepção extrassensorial do Crivo, P3-precognição e P4-visão-remota (`crivo/pes/index.html`). Os testes em si rodam na aplicação do Crivo, em `app.crivo.psigama.com/protocolo/P3` e `/protocolo/P4` |
 | `psigama.com/artigo-crivo` | Esboço do artigo técnico do Crivo (`artigo-crivo/index.html`), ligado a partir de Publicações |
 | `psigama.com/crivo` | Página explicativa da plataforma Crivo (`crivo/index.html`): garantias, os quatro protocolos — dois experimentos e dois testes — e tecnologia |
-| `crivo.psigama.com` | Crivo, aplicação Spring Boot do repositório [`crivo`](https://github.com/rogeriocisi/crivo), servida na raiz do subdomínio |
+| `crivo.psigama.com` | Site estático do Crivo, com as páginas editoriais, publicado pelo GitHub Pages do repositório [`crivo`](https://github.com/rogeriocisi/crivo) a cada push na `main` (SPEC 0.21, seção 1.3). Um endereço que não existe ali vai para a aplicação |
+| `app.crivo.psigama.com` | Aplicação Spring Boot do Crivo, na VPS: protocolos, contas, testes, estudos e carimbos, servida na raiz do subdomínio |
 
 ## Arquivos
 
@@ -36,7 +37,8 @@ O site e o Crivo ficam em lugares separados: se a VM do Crivo cair, o site conti
 ### Crivo: VPS na Hostinger
 
 - VPS KVM da Hostinger no data center de São Paulo, com Ubuntu 26.04, rodando a aplicação do Crivo com o PostgreSQL do sistema operacional, como pede a constituição do Crivo (sem Docker). O passo a passo está em [`docs/DEPLOY.md`](https://github.com/rogeriocisi/crivo/blob/main/docs/DEPLOY.md), no repositório `crivo`.
-- Um proxy reverso (por exemplo, o Caddy) atende `crivo.psigama.com` com HTTPS automático e encaminha para a aplicação. Como o Crivo fica na raiz do subdomínio, não é preciso context path.
+- O Caddy atende `app.crivo.psigama.com` com HTTPS automático e encaminha para a aplicação. Como ela fica na raiz do subdomínio, não é preciso context path.
+- As páginas editoriais do Crivo não passam pela VPS: ficam em `crivo.psigama.com`, no GitHub Pages do repositório `crivo`.
 - Backup diário do banco (`pg_dump`) para fora da VM, e envio de e-mail por um serviço SMTP externo.
 
 ### DNS
@@ -46,7 +48,8 @@ O site e o Crivo ficam em lugares separados: se a VM do Crivo cair, o site conti
 | `psigama.com` | A | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (GitHub Pages) |
 | `psigama.com` | AAAA | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` (GitHub Pages) |
 | `www.psigama.com` | CNAME | `rogeriocisi.github.io` |
-| `crivo.psigama.com` | A | IP público da VM do Crivo |
+| `crivo.psigama.com` | CNAME | `rogeriocisi.github.io` (GitHub Pages do repositório `crivo`) |
+| `app.crivo.psigama.com` | A | IP público da VM do Crivo |
 
 ## Publicações
 
