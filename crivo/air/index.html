@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-  <title>Experimentos de AIR do Crivo · PsiGama</title>
+  <title>Experimentos de mediunidade do Crivo · PsiGama</title>
   <meta name="description"
-    content="Os dois experimentos de mediunidade da plataforma Crivo: P1-automático, a leitura estruturada automatizada, e P2-supervisionado, a leitura pareada cega.">
+    content="Os dois experimentos de mediunidade da plataforma Crivo: o P1-automático, que roda inteiro pelo site, e o P2-supervisionado, conduzido por uma equipe e mantido como referência.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -42,11 +42,10 @@
       <div class="wrap">
         <p class="crumb"><a href="../">← Crivo</a></p>
         <span class="tag experiment">Experimentos · Crivo</span>
-        <h1>Experimentos de recepção anômala de informação</h1>
-        <p class="lead">Os dois experimentos de mediunidade da plataforma Crivo, P1 e P2. Na literatura, recepção
-          anômala de informação (AIR) é a obtenção de informação sobre uma pessoa falecida sem via sensorial
-          conhecida, e é isso que os dois testam, com controles que nenhuma das pessoas envolvidas consegue
-          contornar.</p>
+        <h1>Experimentos de mediunidade</h1>
+        <p class="lead">Os dois experimentos do Crivo investigam se o médium traz informações certas sobre quem já
+          faleceu, sem ter como saber. Os controles impedem que qualquer pessoa envolvida, inclusive a equipe, mexa no
+          resultado.</p>
         <dl class="facts">
           <div>
             <dt>Protocolos</dt>
@@ -72,52 +71,64 @@
 
     <section>
       <div class="wrap prose">
-        <h2>P1-automático: leitura estruturada automatizada</h2>
-        <p>É o experimento ativo da plataforma, e roda inteiro pelo site, sem ninguém da equipe no circuito.</p>
+        <h2>P1-automático: o experimento que roda pelo site</h2>
+        <p>É o experimento ativo da plataforma. Roda inteiro pelo site, sem ninguém da equipe no meio.</p>
         <ol>
-          <li>O <strong>consulente</strong> — quem conheceu a pessoa falecida — cria uma conta, informa o primeiro
-            nome dela e responde a um questionário fechado sobre ela. As respostas são travadas antes de qualquer
-            médium receber o pedido.</li>
-          <li>O sistema forma pares de pedidos parecidos, com o mesmo gênero, faixa etária e período do
-            falecimento, e sorteia um <strong>médium</strong> para cada par.</li>
-          <li>O médium recebe só os dois primeiros nomes e responde ao mesmo questionário uma vez para cada nome.
-            Cada leitura é travada antes da seguinte.</li>
-          <li>Quando o estudo alcança o número de pares pré-registrado, o desmascaramento é automático: o sistema
-            confere cada leitura campo a campo, contra o alvo verdadeiro e contra o outro pedido do par, que serve
-            de chamariz.</li>
-          <li>Consulentes e médiuns recebem a devolutiva, e o relatório, com hash, fica público.</li>
+          <li>O <strong>consulente</strong>, que conheceu a pessoa falecida, cria uma conta, informa o primeiro
+            nome dela e responde a perguntas de múltipla escolha sobre ela. As respostas ficam lacradas antes de
+            qualquer médium receber o pedido.</li>
+          <li>O sistema junta dois pedidos parecidos (mesmo gênero, faixa de idade e época do falecimento) e sorteia
+            um <strong>médium</strong> para o par.</li>
+          <li>O médium recebe só os dois primeiros nomes, sem saber quem pediu, e responde às mesmas perguntas para
+            cada nome. Cada leitura fica lacrada antes da seguinte.</li>
+          <li>Quando o estudo completa o número de pares combinado no início, o próprio sistema abre os resultados e
+            compara cada leitura com as respostas da pessoa certa e com as da outra pessoa do par, que serve de
+            comparação.</li>
+          <li>Consulentes e médiuns recebem o resultado, e o relatório fica público.</li>
         </ol>
-        <p>Ninguém julga se uma afirmação "encaixa": a conferência é uma comparação entre opções fechadas, por uma
-          regra publicada antes da coleta. O <a href="https://app.crivo.psigama.com/protocolo/P1#questionario">questionário
-          em vigor</a> está publicado, campo a campo.</p>
+        <p>Ninguém julga se uma frase "encaixa": a conferência compara opções fechadas, por uma regra publicada antes
+          da coleta. As <a href="https://app.crivo.psigama.com/protocolo/P1#questionario">perguntas em vigor</a>
+          estão publicadas, uma a uma.</p>
+        <details class="detail">
+          <summary>Detalhe técnico</summary>
+          <p>Leitura estruturada automatizada, em pares. Cada pedido trava com um compromisso salgado publicado na
+            trilha de auditoria. Os pares se formam dentro do mesmo estrato de pareamento, e cada pedido é o chamariz
+            do outro. O médium é sorteado a partir de uma semente comprometida no pré-registro. No número de pares
+            pré-registrado, o desmascaramento é automático: o sistema confere cada leitura campo a campo contra o alvo
+            e contra o chamariz, roda a análise declarada (Wilcoxon exato unilateral sobre a diferença do par) e
+            publica o relatório com hash. Detalhes na
+            <a href="https://app.crivo.psigama.com/pesquisa">página para pesquisadores</a>.</p>
+        </details>
 
-        <h2>P2-supervisionado: leitura pareada cega</h2>
+        <h2>P2-supervisionado: a leitura conduzida por equipe</h2>
         <p>É o desenho mais próximo da literatura. O médium faz uma leitura livre conhecendo só o primeiro nome,
-          entregue por um experimentador que não sabe nada sobre a pessoa. Um redator, também cego, converte a
-          leitura em itens verificáveis, e o consulente recebe duas leituras sem rótulo — a do seu falecido e a de
-          outro —, pontua os itens e escolhe qual acredita ser a sua.</p>
-        <p>O P2 exige uma equipe em sessão síncrona e julgamento humano na pontuação, e por isso não roda sozinho
-          pelo site. Ele fica na plataforma <strong>só como referência</strong>: é contra ele que se mede o que o P1
-          ganha e o que perde.</p>
+          entregue por uma pessoa da equipe que não sabe nada sobre quem faleceu. Outra pessoa, também sem saber,
+          transforma a leitura em afirmações que podem ser conferidas, e o consulente recebe duas leituras sem
+          identificação, a da sua pessoa e a de outra, para avaliar e escolher qual acredita ser a sua.</p>
+        <p>O P2 exige uma equipe trabalhando ao mesmo tempo e o julgamento humano na pontuação, e por isso não roda
+          sozinho pelo site. Ele fica na plataforma <strong>só como referência</strong>: é contra ele que se mede o
+          que o P1 ganha e o que perde.</p>
 
         <h2>O que um resultado não sustenta</h2>
         <ul>
-          <li>Um acerto acima do acaso mostra que houve informação, mas não de onde ela veio: não distingue
-            sobrevivência de telepatia com pessoas vivas.</li>
-          <li>O P1 não tem experimentador intermediário. Os estudos em que o médium não interagiu com ninguém deram
-            resultado nulo (Silva e Moreira-Almeida, 2022), e um nulo no P1 não refuta os protocolos com
-            intermediário da literatura.</li>
-          <li>O questionário fechado só captura o que cabe nos campos; as afirmações livres e específicas ficam fora
-            da nota.</li>
-          <li>O primeiro nome carrega informação, como o gênero e às vezes a geração. O pareamento e os campos fora
-            da nota reduzem esse vazamento, mas não o eliminam.</li>
+          <li>Um acerto acima do acaso mostra que houve informação, mas não de onde ela veio: não distingue a
+            comunicação com quem faleceu da telepatia com pessoas vivas.</li>
+          <li>O P1 não tem uma pessoa intermediária conversando com o médium. Nos estudos em que o médium não
+            interagiu com ninguém, o resultado foi nulo (Silva e Moreira-Almeida, 2022), e um nulo no P1 não refuta
+            os protocolos com intermediário da literatura.</li>
+          <li>As perguntas fechadas só captam o que cabe nas opções; as afirmações livres e específicas ficam fora da
+            nota.</li>
+          <li>O primeiro nome já diz alguma coisa, como o gênero e às vezes a geração. Comparar pedidos parecidos e
+            deixar essas perguntas fora da nota reduz esse vazamento, mas não o elimina.</li>
         </ul>
 
         <h2>Como participar</h2>
-        <p>O P1 está em construção. O questionário está em revisão, e as inscrições abrem quando a plataforma tiver
-          envio de e-mail configurado e o estudo tiver aprovação de um comitê de ética em pesquisa. Até lá, a página
-          do protocolo descreve o desenho completo.</p>
-        <p class="note">Os experimentos de AIR fazem parte da <a href="../">plataforma Crivo</a>, ao lado dos
+        <p>O P1 está pronto, mas nunca rodou com participantes reais. As perguntas ainda estão em revisão, e as
+          inscrições abrem depois da aprovação de um comitê de ética em pesquisa. Até lá, há uma página
+          <a href="https://app.crivo.psigama.com/consulente">para consulentes</a>, outra
+          <a href="https://app.crivo.psigama.com/medium">para médiuns</a> e as
+          <a href="https://app.crivo.psigama.com/perguntas">perguntas frequentes</a>.</p>
+        <p class="note">Os experimentos de mediunidade fazem parte da <a href="../">plataforma Crivo</a>, ao lado dos
           <a href="../pes/">testes de percepção extrassensorial</a>.</p>
       </div>
     </section>

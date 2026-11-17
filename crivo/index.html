@@ -7,7 +7,7 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <title>Crivo · PsiGama</title>
   <meta name="description"
-    content="Crivo: plataforma de protocolos cegos para pesquisa de cognição anômala, com pré-registro congelado, sorteio verificável, trilha de auditoria e desmascaramento automático. Mantida pela PsiGama.">
+    content="Crivo: um jeito justo de pesquisar a mediunidade. O médium não sabe para quem responde, ninguém mexe nas respostas depois, e todo resultado é publicado. Código aberto, mantido pela PsiGama.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -43,29 +43,44 @@
         <p class="crumb"><a href="../#pesquisas">← Pesquisas</a></p>
         <span class="tag">Lançamento</span>
         <h1>Crivo</h1>
-        <p class="lead">Plataforma de protocolos cegos para pesquisa de cognição anômala: dois experimentos de
-          mediunidade e dois testes de percepção extrassensorial, em que nem os participantes nem o pesquisador
-          conseguem influenciar o resultado sem deixar rastro.</p>
+        <p class="lead">Um jeito justo de pesquisar a mediunidade: o médium não sabe para quem responde, ninguém
+          mexe nas respostas depois, e todo resultado é publicado, a favor ou contra.</p>
+
+        <nav class="doors" aria-label="Por onde começar">
+          <a class="door" href="https://app.crivo.psigama.com/consulente">
+            <strong>Perdi alguém</strong>
+            <span>Participar como consulente</span>
+          </a>
+          <a class="door" href="https://app.crivo.psigama.com/medium">
+            <strong>Sou médium</strong>
+            <span>Como funciona para você</span>
+          </a>
+          <a class="door door-method" href="https://app.crivo.psigama.com/pesquisa">
+            <strong>Pesquiso ou quero conferir</strong>
+            <span>Desenho, dados e auditoria</span>
+          </a>
+        </nav>
+
         <dl class="facts">
           <div>
             <dt>Protocolos</dt>
             <dd>2 experimentos e 2 testes</dd>
           </div>
           <div>
-            <dt>Ramos</dt>
-            <dd>Mediunidade (AIR) e ESP</dd>
+            <dt>Temas</dt>
+            <dd>Mediunidade e percepção extrassensorial</dd>
           </div>
           <div>
             <dt>Código</dt>
             <dd>Aberto, licença MIT</dd>
           </div>
           <div>
-            <dt>Servidor</dt>
-            <dd>São Paulo, Brasil</dd>
+            <dt>Inscrições</dt>
+            <dd>Depois da aprovação ética</dd>
           </div>
         </dl>
-        <p><a class="btn solid" href="https://crivo.psigama.com/">Acessar a plataforma</a>
-          <a class="btn ghost" href="https://app.crivo.psigama.com/protocolos">Ver os quatro protocolos</a>
+        <p><a class="btn solid" href="https://crivo.psigama.com/">Ir para o site do Crivo</a>
+          <a class="btn ghost" href="https://app.crivo.psigama.com/perguntas">Perguntas frequentes</a>
         </p>
       </div>
     </section>
@@ -73,81 +88,96 @@
     <section>
       <div class="wrap prose">
         <h2>O problema</h2>
-        <p>A pesquisa sobre mediunidade — na literatura, <em>recepção anômala de informação</em>, ou AIR — costuma ser
-          criticada pelos mesmos pontos: o médium pode receber pistas de quem está presente, quem avalia uma leitura
-          sabe a quem ela se refere, e decisões de análise são tomadas depois de ver os dados. Quando um resultado
-          positivo aparece, sobra a dúvida sobre o controle; quando aparece um nulo, sobra a dúvida sobre o desenho.</p>
-        <p>O Crivo leva esses controles para dentro do software. Em vez de depender da disciplina de cada pessoa
-          envolvida, o próprio sistema impede que alguém veja o que não deveria e registra tudo o que acontece, de um
-          jeito que qualquer pessoa pode conferir depois.</p>
+        <p>Não faltam relatos de médiuns que acertam. Falta um jeito de pesquisar que resista à dúvida. Quase nunca
+          dá para descartar que o médium recebeu pistas de quem estava presente, que quem avaliou a leitura sabia a
+          quem ela se referia, ou que as regras da análise foram escolhidas depois de ver os dados. Quando um
+          resultado positivo aparece, sobra a dúvida sobre o controle; quando aparece um nulo, sobra a dúvida sobre
+          o desenho.</p>
+        <p>O Crivo leva esses controles para dentro do software. Em vez de depender do cuidado de cada pessoa, o
+          próprio sistema impede que alguém veja o que não deveria e registra tudo o que acontece, de um jeito que
+          qualquer pessoa pode conferir depois.</p>
 
-        <h2>As garantias</h2>
-        <p>Algumas valem para todos os protocolos que rodam na plataforma; outras são próprias dos experimentos de
-          mediunidade, que pesquisam com estudos pré-registrados.</p>
-        <h3>Em todos os protocolos</h3>
+        <h2>As garantias, em poucas palavras</h2>
         <ul>
-          <li><strong>Alvo fora do alcance.</strong> Quem responde nunca vê o alvo antes de a resposta travar: o
-            sistema impõe isso, e cada regra de visibilidade tem um teste automatizado que tenta violá-la.</li>
-          <li><strong>Sorteio verificável.</strong> A semente do sorteio é comprometida antes da primeira resposta e
-            revelada depois; qualquer pessoa refaz o sorteio e confere.</li>
-          <li><strong>Trilha de auditoria imutável.</strong> Cada operação gera um evento encadeado por hash, e a
-            trilha é carimbada periodicamente por uma autoridade de carimbo de tempo externa.</li>
-          <li><strong>Nenhuma inteligência artificial na nota.</strong> Nenhum modelo avalia respostas nem atribui
-            pontuação.</li>
+          <li><strong>Ninguém sabe o que não deve.</strong> O médium não sabe quem pediu, e quem responde nunca vê a
+            resposta certa antes de travar a sua.</li>
+          <li><strong>As regras são lacradas antes de começar.</strong> Ninguém muda as regras no meio do jogo.</li>
+          <li><strong>O sorteio pode ser refeito por qualquer pessoa</strong>, e dá sempre o mesmo resultado.</li>
+          <li><strong>Cada passo fica num registro público que não aceita borracha</strong>, carimbado com a data
+            por um serviço independente.</li>
+          <li><strong>Nenhuma máquina julga.</strong> Nenhum programa de inteligência artificial lê ou dá nota a
+            nada.</li>
+          <li><strong>Todo resultado é publicado</strong>, a favor ou contra.</li>
         </ul>
-        <h3>Nos experimentos de mediunidade</h3>
-        <ul>
-          <li><strong>Pré-registro antes do dado.</strong> Hipóteses, tamanho da amostra e análise são congelados, com
-            hash publicado, antes do primeiro participante.</li>
-          <li><strong>Conferência por regra fixa.</strong> As respostas são comparadas entre opções fechadas, por uma
-            regra publicada antes da coleta; ninguém julga se uma afirmação "encaixa".</li>
-          <li><strong>Desmascaramento automático.</strong> O estudo só é aberto quando o número de pares
-            pré-registrado é alcançado; antes disso, nenhuma nota existe.</li>
-        </ul>
-        <p>Nos testes, cada sessão é anônima e exploratória, e o resultado sai no fim dela. No P4-visão-remota, quem
-          ordena as figuras pela semelhança com a própria impressão é a pessoa que faz o teste.</p>
+        <details class="detail">
+          <summary>Detalhe técnico</summary>
+          <p>Algumas garantias valem para todos os protocolos da plataforma; outras são próprias dos experimentos
+            de mediunidade, que rodam em estudos pré-registrados.</p>
+          <ul>
+            <li><strong>Alvo fora do alcance</strong>, em todos os protocolos: quem responde nunca vê o alvo antes de
+              a resposta travar. O sistema impõe isso, e cada regra de visibilidade tem um teste automatizado que
+              tenta violá-la.</li>
+            <li><strong>Sorteio verificável</strong>, em todos: a semente do sorteio é comprometida antes da primeira
+              resposta e revelada depois; qualquer pessoa refaz o sorteio e confere.</li>
+            <li><strong>Trilha de auditoria imutável</strong>, em todos: cada operação gera um evento encadeado por
+              hash, e a trilha é carimbada periodicamente por uma autoridade de carimbo de tempo externa (RFC
+              3161).</li>
+            <li><strong>Pré-registro antes do dado</strong>, nos experimentos: hipóteses, tamanho da amostra e
+              análise são congelados, com hash publicado, antes do primeiro participante.</li>
+            <li><strong>Conferência por regra fixa</strong>, nos experimentos: as respostas são comparadas entre
+              opções fechadas, por uma regra publicada antes da coleta.</li>
+            <li><strong>Abertura automática dos resultados</strong> (o desmascaramento, na literatura), nos
+              experimentos: o estudo só é aberto quando o número de pares pré-registrado é alcançado; antes disso,
+              nenhuma nota existe.</li>
+          </ul>
+          <p>Nos testes, cada sessão é anônima e exploratória, e o resultado sai no fim dela. O desenho completo está
+            na <a href="https://app.crivo.psigama.com/pesquisa">página para pesquisadores</a>, também
+            <a href="https://app.crivo.psigama.com/pesquisa/en" hreflang="en">em inglês</a>.</p>
+        </details>
 
         <h2>Os quatro protocolos</h2>
         <p>A plataforma tem quatro protocolos, de dois tipos. A diferença está no que cada um pergunta, em como a
           resposta é conferida e em quando o resultado sai.</p>
 
         <h3>Dois experimentos de mediunidade</h3>
-        <p>Na literatura, <em>recepção anômala de informação</em> (AIR) é a obtenção de informação sobre uma pessoa
-          falecida sem via sensorial conhecida. Os experimentos envolvem consulente e médium cadastrados, rodam em
-          estudos pré-registrados e só têm resultado quando o estudo termina.</p>
+        <p>Os experimentos investigam se o médium traz informações certas sobre quem já faleceu, sem ter como saber.
+          Na literatura, isso se chama <em>recepção anômala de informação</em> (AIR). Participam consulentes, que
+          conheceram a pessoa falecida, e médiuns, com conta no site. O resultado só sai quando o estudo termina.</p>
         <ul>
-          <li><strong>P1-automático</strong> — leitura estruturada automatizada, que roda inteira pelo site. Em
-            construção.</li>
-          <li><strong>P2-supervisionado</strong> — leitura pareada cega, que exige uma equipe. Fica só como
-            referência.</li>
+          <li><strong>P1-automático</strong>: roda inteiro pelo site. O médium recebe só o primeiro nome e responde
+            a perguntas de múltipla escolha, que o sistema compara com as respostas da pessoa certa e de uma pessoa
+            de comparação.</li>
+          <li><strong>P2-supervisionado</strong>: a leitura conduzida por uma equipe, como na literatura. Fica só
+            como referência.</li>
         </ul>
-        <p><a href="air/">Conheça os experimentos de AIR</a></p>
+        <p><a href="air/">Conheça os experimentos de mediunidade</a></p>
 
         <h3>Dois testes de percepção extrassensorial</h3>
         <p>Nos testes, não há pessoa falecida envolvida: o alvo é sorteado pelo próprio sistema. São rápidos,
-          anônimos, sem conta, e o resultado sai na hora, com a semente revelada para conferência.</p>
+          anônimos, sem conta, e o resultado sai na hora, com o sorteio aberto para conferência.</p>
         <ul>
-          <li><strong>P3-precognição</strong> — escolha forçada entre quatro alternativas, com o alvo definido só
-            depois da resposta.</li>
-          <li><strong>P4-visão-remota</strong> — descrição livre de uma figura sorteada, depois comparada com quatro
+          <li><strong>P3-precognição</strong>: escolher uma entre quatro alternativas, antes de o alvo ser
+            definido.</li>
+          <li><strong>P4-visão-remota</strong>: descrever uma figura sorteada e depois compará-la com quatro
             candidatas.</li>
         </ul>
-        <p><a href="pes/">Conheça os testes de ESP</a></p>
+        <p><a href="pes/">Conheça os testes de percepção extrassensorial</a></p>
 
         <h2>O que o Crivo não faz</h2>
         <p>A plataforma não afirma nem nega a existência do fenômeno estudado e não interpreta resultados do ponto de
-          vista doutrinário. Cada protocolo declara, na própria página, o que o seu resultado não sustenta: um acerto
-          acima do acaso no P1, por exemplo, mostra que houve informação, mas não distingue sobrevivência de telepatia
-          com pessoas vivas.</p>
+          vista de nenhuma doutrina. Cada protocolo declara, na própria página, o que o seu resultado não sustenta:
+          um acerto acima do acaso no P1, por exemplo, mostra que houve informação, mas não distingue a
+          comunicação com quem faleceu da telepatia com pessoas vivas.</p>
 
         <h2>Tecnologia</h2>
         <p>O Crivo é uma aplicação Java com Spring Boot e PostgreSQL, sem dependência de serviços de terceiros para
           funcionar, e roda num servidor em São Paulo. O código, a especificação e os princípios do projeto estão
           abertos no <a href="https://github.com/rogeriocisi/crivo">GitHub</a>, sob a licença MIT. O
-          <a href="https://crivo.psigama.com/artigo/">artigo técnico</a>, ainda em esboço, descreve o desenho em detalhe.
-        </p>
+          <a href="https://crivo.psigama.com/artigo/">artigo técnico</a>, ainda em esboço, descreve o desenho em
+          detalhe.</p>
 
-        <p class="note">O Crivo é desenvolvido por Rogerio Cisi e mantido pela PsiGama.</p>
+        <p class="note">O Crivo é desenvolvido por Rogerio Cisi e mantido pela PsiGama. As inscrições nos
+          experimentos abrem depois da aprovação de um comitê de ética em pesquisa.</p>
       </div>
     </section>
   </main>
