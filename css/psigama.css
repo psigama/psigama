@@ -511,6 +511,56 @@ footer .wrap {
   margin-top: 16px;
 }
 
+/* Página de livro (sistema-psiquico) */
+.book {
+  display: grid;
+  grid-template-columns: minmax(150px, 230px) 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.book-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(27, 29, 42, 0.28);
+}
+
+.book .tag {
+  margin-bottom: 14px;
+}
+
+.book .lead {
+  margin: 16px 0 26px;
+}
+
+.book-file {
+  margin: 14px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.prose .book-toc {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose .book-toc li {
+  margin: 4px 0;
+}
+
+@media (max-width: 640px) {
+  .book {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .book-cover {
+    max-width: 200px;
+  }
+}
+
 /* Subtítulos e código no texto corrido */
 .prose h3 {
   font-size: 20px;

@@ -13,12 +13,14 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 | `psigama.com/crivo/air` | Experimentos de recepção anômala de informação do Crivo, P1-automático e P2-supervisionado (`crivo/air/index.html`) |
 | `psigama.com/crivo/pes` | Testes de percepção extrassensorial do Crivo, P3-precognição e P4-visão-remota (`crivo/pes/index.html`). Os testes em si rodam na aplicação do Crivo, em `app.crivo.psigama.com/protocolo/P3` e `/protocolo/P4` |
 | `psigama.com/crivo` | Página explicativa da plataforma Crivo (`crivo/index.html`): garantias, os quatro protocolos — dois experimentos e dois testes — e tecnologia |
+| `psigama.com/sistema-psiquico` | Página do livro *O sistema psíquico* (`sistema-psiquico/index.html`), com o PDF gratuito da edição revisada de 2026 (`sistema-psiquico/o-sistema-psiquico.pdf`) e a capa (`sistema-psiquico/capa.jpg`) |
 | `crivo.psigama.com` | Site estático do Crivo, com as páginas editoriais, publicado pelo GitHub Pages do repositório [`crivo`](https://github.com/rogeriocisi/crivo) a cada push na `main` (SPEC 0.21, seção 1.3). Um endereço que não existe ali vai para a aplicação |
 | `app.crivo.psigama.com` | Aplicação Spring Boot do Crivo, na VPS: protocolos, contas, testes, estudos e carimbos, servida na raiz do subdomínio |
 
 ## Arquivos
 
-- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/` e `crivo/` (com `crivo/air/` e `crivo/pes/`) são HTML estático, sem build.
+- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/`, `crivo/` (com `crivo/air/` e `crivo/pes/`) e `sistema-psiquico/` são HTML estático, sem build.
+- `sistema-psiquico/o-sistema-psiquico.pdf` é gerado fora do repositório (texto revisado diagramado com Typst) e entra aqui pronto; para atualizar o livro, substitua o PDF e, se o número de páginas ou o tamanho mudar, ajuste a linha "PDF · … páginas" em `sistema-psiquico/index.html`.
 - `css/psigama.css` guarda os estilos compartilhados por todas as páginas.
 - Os links entre as páginas são relativos, então o site funciona tanto em `rogeriocisi.github.io/psigama/` quanto no domínio próprio.
 
