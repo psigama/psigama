@@ -8,6 +8,7 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 | --- | --- |
 | `psigama.com/` | Página inicial (`index.html`) |
 | `psigama.com/remoto` | Página explicativa do ReMoto (`remoto/index.html`). A nova versão do simulador está em desenvolvimento; a versão on-line da USP foi descontinuada |
+| `psigama.com/remoto/artigo` | Página do artigo de 2008 no Journal of Computational Neuroscience, que descreve o ReMoto (`remoto/artigo/index.html`) |
 | `psigama.com/axion` | Página explicativa do Áxion (`axion/index.html`), o próximo projeto |
 | `psigama.com/quantum-study` | Página explicativa do Quantum Computing Study (`quantum-study/index.html`) |
 | `psigama.com/crivo/air` | Experimentos de recepção anômala de informação do Crivo, P1-automático e P2-supervisionado (`crivo/air/index.html`) |
@@ -19,7 +20,7 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 
 ## Arquivos
 
-- `index.html` e as páginas em `remoto/`, `axion/`, `quantum-study/`, `crivo/` (com `crivo/air/` e `crivo/pes/`) e `sistema-psiquico/` são HTML estático, sem build.
+- `index.html` e as páginas em `remoto/` (com `remoto/artigo/`), `axion/`, `quantum-study/`, `crivo/` (com `crivo/air/` e `crivo/pes/`) e `sistema-psiquico/` são HTML estático, sem build.
 - O livro completo não é distribuído aqui: o eBook está no KDP Select, que exige exclusividade digital da Amazon. O registro do Zenodo (DOI 10.5281/zenodo.24370051) tem os arquivos restritos.
 - `sistema-psiquico/o-sistema-psiquico-resumo.pdf` é gerado fora do repositório e entra aqui pronto; se o número de páginas mudar, ajuste a linha "Resumo: PDF, … páginas" em `sistema-psiquico/index.html`.
 - `css/psigama.css` guarda os estilos compartilhados por todas as páginas.

@@ -441,6 +441,10 @@ footer .wrap {
   margin-bottom: 0;
 }
 
+.page-hero .lead + .cta {
+  margin-top: 26px;
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
