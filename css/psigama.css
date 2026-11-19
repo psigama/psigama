@@ -469,6 +469,12 @@ footer .wrap {
   font-family: "Fraunces", serif;
   font-size: 21px;
   line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.facts dd a {
+  font-size: 17px;
+  text-decoration: none;
 }
 
 .prose {
