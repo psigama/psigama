@@ -14,15 +14,12 @@ Página inicial de `psigama.com`: a iniciativa pessoal e aberta de software para
 | `psigama.com/crivo/air` | Experimentos de recepção anômala de informação do Crivo, P1-automático e P2-supervisionado (`crivo/air/index.html`) |
 | `psigama.com/crivo/pes` | Testes de percepção extrassensorial do Crivo, P3-precognição e P4-visão-remota (`crivo/pes/index.html`). Os testes em si rodam na aplicação do Crivo, em `app.crivo.psigama.com/protocolo/P3` e `/protocolo/P4` |
 | `psigama.com/crivo` | Página explicativa da plataforma Crivo (`crivo/index.html`): garantias, os quatro protocolos — dois experimentos e dois testes — e tecnologia |
-| `psigama.com/sistema-psiquico` | Página do livro *O sistema psíquico* (`sistema-psiquico/index.html`), com o resumo em PDF (`sistema-psiquico/o-sistema-psiquico-resumo.pdf`), o link de compra na Amazon, o DOI do Zenodo e a capa (`sistema-psiquico/capa.jpg`) |
 | `crivo.psigama.com` | Site estático do Crivo, com as páginas editoriais, publicado pelo GitHub Pages do repositório [`crivo`](https://github.com/rogeriocisi/crivo) a cada push na `main` (SPEC 0.21, seção 1.3). Um endereço que não existe ali vai para a aplicação |
 | `app.crivo.psigama.com` | Aplicação Spring Boot do Crivo, na VPS: protocolos, contas, testes, estudos e carimbos, servida na raiz do subdomínio |
 
 ## Arquivos
 
-- `index.html` e as páginas em `remoto/` (com `remoto/artigo/`), `axion/`, `quantum-study/`, `crivo/` (com `crivo/air/` e `crivo/pes/`) e `sistema-psiquico/` são HTML estático, sem build.
-- O livro completo não é distribuído aqui: o eBook está no KDP Select, que exige exclusividade digital da Amazon. O registro do Zenodo (DOI 10.5281/zenodo.24370051) tem os arquivos restritos.
-- `sistema-psiquico/o-sistema-psiquico-resumo.pdf` é gerado fora do repositório e entra aqui pronto; se o número de páginas mudar, ajuste a linha "Resumo: PDF, … páginas" em `sistema-psiquico/index.html`.
+- `index.html` e as páginas em `remoto/` (com `remoto/artigo/`), `axion/`, `quantum-study/` e `crivo/` (com `crivo/air/` e `crivo/pes/`) são HTML estático, sem build.
 - `css/psigama.css` guarda os estilos compartilhados por todas as páginas.
 - Os links entre as páginas são relativos, então o site funciona tanto em `rogeriocisi.github.io/psigama/` quanto no domínio próprio.
 
