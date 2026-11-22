@@ -346,11 +346,6 @@ section.block.alt .card {
   color: #5b3f8f;
 }
 
-.card.featured {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent) inset;
-}
-
 .todo {
   border: 1px dashed var(--gold);
   background: #fbf7ee;
