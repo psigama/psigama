@@ -1,15 +1,12 @@
-/* PsiGama: estilos compartilhados pelas páginas do site */
+/* PsiGama: estilos da página inicial */
 
 :root {
   --ink: #1b1d2a;
   --ink-soft: #4a4e63;
   --paper: #f7f5f0;
-  --card: #ffffff;
   --line: #e2ded3;
   --accent: #3b3f8f;
-  --accent-soft: #e8e8f6;
   --gold: #a07a2c;
-  --radius: 14px;
   --max: 1080px;
 }
 
@@ -46,7 +43,7 @@ a:hover {
   padding: 0 24px;
 }
 
-/* Header */
+/* Cabeçalho */
 header.top {
   position: sticky;
   top: 0;
@@ -83,30 +80,16 @@ header.top .wrap {
   letter-spacing: 0.2px;
 }
 
-nav.links {
-  display: flex;
-  gap: 22px;
-  font-size: 15px;
-}
-
-nav.links a {
-  color: var(--ink-soft);
-  text-decoration: none;
-}
-
-nav.links a:hover {
-  color: var(--accent);
-}
-
-@media (max-width: 760px) {
-  nav.links {
-    display: none;
-  }
-}
-
-/* Hero */
+/* Abertura */
 .hero {
   padding: 88px 0 24px;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 48px;
+  align-items: center;
 }
 
 .hero .lead {
@@ -115,13 +98,6 @@ nav.links a:hover {
 
 .hero+section.block {
   padding-top: 32px;
-}
-
-.hero .wrap {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  gap: 48px;
-  align-items: center;
 }
 
 .eyebrow {
@@ -134,8 +110,7 @@ nav.links a:hover {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Fraunces", serif;
   font-weight: 600;
   line-height: 1.15;
@@ -154,53 +129,6 @@ h1 {
   max-width: 34em;
 }
 
-.cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-  border: 1px solid var(--accent);
-}
-
-.btn.solid {
-  background: var(--accent);
-  color: #fff;
-}
-
-.btn.solid:hover {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: #fff;
-}
-
-.btn.ghost {
-  color: var(--accent);
-  background: transparent;
-}
-
-.btn.ghost:hover {
-  background: var(--accent-soft);
-}
-
-.hero-art {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-art svg {
-  width: 100%;
-  max-width: 380px;
-  height: auto;
-}
-
 @media (max-width: 860px) {
   .hero {
     padding: 56px 0 16px;
@@ -209,25 +137,11 @@ h1 {
   .hero .wrap {
     grid-template-columns: 1fr;
   }
-
-  .hero-art {
-    order: -1;
-  }
-
-  .hero-art svg {
-    max-width: 220px;
-  }
 }
 
-/* Sections */
+/* Seções */
 section.block {
   padding: 80px 0;
-}
-
-section.block.alt {
-  background: var(--card);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
 .section-head {
@@ -239,161 +153,7 @@ section.block.alt {
   font-size: clamp(28px, 3.4vw, 38px);
 }
 
-.section-head p {
-  color: var(--ink-soft);
-  margin: 12px 0 0;
-}
-
-.grid {
-  display: grid;
-  gap: 20px;
-}
-
-.grid.three {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid.two {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-@media (max-width: 900px) {
-  .grid.three {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 720px) {
-  .grid.two {
-    grid-template-columns: 1fr;
-  }
-}
-
-.card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-section.block.alt .card {
-  background: var(--paper);
-}
-
-.card h3 {
-  font-size: 23px;
-}
-
-.card p {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 15.5px;
-}
-
-.card .meta {
-  font-size: 13px;
-  color: var(--ink-soft);
-}
-
-.card .subtitle {
-  font-family: "Fraunces", serif;
-  font-size: 17px;
-  line-height: 1.35;
-  color: var(--ink);
-}
-
-.card .actions {
-  margin-top: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  font-size: 15px;
-  font-weight: 500;
-  padding-top: 6px;
-}
-
-.tag {
-  align-self: flex-start;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-
-.tag.soon {
-  background: #f3ecdc;
-  color: var(--gold);
-}
-
-.tag.legacy {
-  background: #e3f0eb;
-  color: #2e6b57;
-}
-
-.tag.study {
-  background: #f6e6e0;
-  color: #9a4a32;
-}
-
-.tag.experiment {
-  background: #ece6f5;
-  color: #5b3f8f;
-}
-
-.todo {
-  border: 1px dashed var(--gold);
-  background: #fbf7ee;
-  color: #6b5420;
-  border-radius: 10px;
-  padding: 12px 14px;
-  font-size: 14px;
-}
-
-/* Publications list */
-.pubs {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 14px;
-}
-
-.pubs li {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px 20px;
-}
-
-section.block.alt .pubs li {
-  background: var(--paper);
-}
-
-.pubs .kind {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-
-.pubs .title {
-  font-family: "Fraunces", serif;
-  font-size: 19px;
-  margin: 4px 0;
-}
-
-.pubs .where {
-  font-size: 14px;
-  color: var(--ink-soft);
-}
-
+/* Rodapé */
 footer {
   padding: 48px 0;
   font-size: 14px;
@@ -405,157 +165,4 @@ footer .wrap {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
-}
-
-/* Páginas internas (remoto, axion, quantum-study) */
-.page-hero {
-  padding: 64px 0 8px;
-}
-
-.crumb {
-  font-size: 14px;
-  margin: 0 0 22px;
-}
-
-.crumb a {
-  color: var(--ink-soft);
-  text-decoration: none;
-}
-
-.crumb a:hover {
-  color: var(--accent);
-}
-
-.page-hero .tag {
-  display: inline-block;
-  margin-bottom: 14px;
-}
-
-.page-hero .lead {
-  max-width: 38em;
-  margin-bottom: 0;
-}
-
-.page-hero .lead + .cta {
-  margin-top: 26px;
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 14px;
-  margin: 36px 0 0;
-  padding: 0;
-}
-
-.facts div {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 16px 18px;
-}
-
-.facts dt {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-
-.facts dd {
-  margin: 4px 0 0;
-  font-family: "Fraunces", serif;
-  font-size: 21px;
-  line-height: 1.25;
-  overflow-wrap: anywhere;
-}
-
-.facts dd a {
-  font-size: 17px;
-  text-decoration: none;
-}
-
-.prose {
-  padding-top: 24px;
-  padding-bottom: 72px;
-}
-
-.prose > * {
-  max-width: 44em;
-}
-
-.prose h2 {
-  font-size: clamp(24px, 2.6vw, 30px);
-  margin: 44px 0 12px;
-}
-
-.prose p,
-.prose li {
-  color: var(--ink);
-}
-
-.prose ul,
-.prose ol {
-  padding-left: 1.25em;
-}
-
-.prose li {
-  margin: 6px 0;
-}
-
-.prose .note {
-  border-left: 3px solid var(--gold);
-  background: var(--card);
-  border-radius: 0 10px 10px 0;
-  padding: 14px 18px;
-  color: var(--ink-soft);
-}
-
-.prose .pubs {
-  margin-top: 16px;
-}
-
-/* Linha de detalhes do arquivo, na página do artigo do ReMoto */
-.book-file {
-  margin: 14px 0 0;
-  font-size: 13.5px;
-  color: var(--ink-soft);
-}
-
-/* Subtítulos e código no texto corrido */
-.prose h3 {
-  font-size: 20px;
-  margin: 28px 0 8px;
-}
-
-.prose code {
-  font-size: 0.92em;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 2px 6px;
-}
-
-/* Crivo: detalhe técnico que se abre, com o vocabulário do site do Crivo (crivo/docs/UX.md). */
-.prose details.detail {
-  margin: 12px 0 0;
-  padding: 4px 18px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-}
-
-.prose details.detail summary {
-  display: flex;
-  align-items: center;
-  min-height: 44px;
-  cursor: pointer;
-  font-weight: 600;
-  color: var(--accent);
-}
-
-.prose details.detail[open] summary {
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 8px;
 }
